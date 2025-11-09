@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Absolute Value Function Transformation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f8fafc;
+      color: #1e293b;
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .left, .right {
+      flex: 1;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    .left {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+    }
+
+    .right iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    h1, h2 {
+      margin: 0;
+      color: #0f172a;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: .25rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #334155;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    .equation {
+      font-family: 'Cambria Math', 'Times New Roman', serif;
+      font-size: 1.35rem;
+      background: #f1f5f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+    }
+
+    .math {
+      font-style: italic;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+      .right iframe {
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <div>
+      <h1>Parent function: |x|</h1>
+      <div class="equation">g(x) = -\(\frac{3}{4}\)\(\frac{12}{11}|x + \frac{235}{100}|\) + 1.45</div>
+    </div>
+
+    <div>
+      <h2>Transformation:</h2>
+      <p>The reason why I chose the absolute function for this graph because the roof of the castle is close to the shape of absolut function. This equation evolves the absolute function. The discrepancies from the parent function are:</p>
+      <ul>
+        <li>Reflection on x-axis</li>
+        <li>Vertical compression by factor of 3/4</li>
+        <li>Horizontal compression by factor of 11/12</li>
+        <li>Vertical translation upward for 1.45 units</li>
+        <li>Horizontal translation toward left for 2.35 units</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Domain and Range</h2>
+      <p>The domain of this function is {−3 ≤ x ≤ 3.1}, the range of this function is {0.69 ≤ y ≤ 1.5}.</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <iframe src="https://www.desmos.com/calculator/luhnynn1yc?embed" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+  </div>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
