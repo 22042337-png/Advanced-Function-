@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Square Root Function Transformation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f8fafc;
+      color: #1e293b;
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+     .left, .right {
+      flex: 1;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+     .left {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+    }
+
+    .right iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+     h1, h2 {
+      margin: 0;
+      color: #0f172a;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: .25rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #334155;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    .equation {
+      font-family: 'Cambria Math', 'Times New Roman', serif;
+      font-size: 1.25rem;
+      background: #f1f5f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+      .right iframe {
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <div>
+      <h1>Parent function: √x</h1>
+      <div class="equation">1.6√(4.6 - x) − 4.5 {−1 ≤ x}</div>
+    </div>
+
+    <div>
+      <h2>Transformation:</h2>
+      <p>The reason why I chose this function is that the kink structures are easily found in slides. This equation evolves the root function. The discrepancies from the parent function are:</p>
+      <ul>
+        <li>Reflection on y-axis</li>
+        <li>Vertical stretch by a factor of 1.6</li>
+        <li>Horizontal translation toward the right for 4.6 units</li>
+        <li>Vertical translation downward for 4.5 units</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Domain and Range</h2>
+      <p>The domain of this function is: {−4.2 ≤ x ≤ 4.6}, the range of this function is: {−4.5 ≤ y ≤ 2.5}.</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <iframe src="https://www.desmos.com/calculator/xdunvi0kkx" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+  </div>
+</body>
+</html>
