@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An exponential function</title>
+
+  <!-- Load MathJax -->
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .container {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .text-section {
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>An exponential function</h1>
+
+  <div class="container">
+    
+    <!-- Math Expression and Paragraphs -->
+    <div class="text-section">
+      <p>$$f(x)=0.8^{2.2(x-3)}-1.8\{1.038967 \le x \le 4.5\}$$</p >
+
+      <p><strong>Transformations Paragraph:</strong>  
+      In this picture, the function I have chosen is an exponential function. The parent function is 
+      \( f(x)=2^x \). The transformed function is 
+      \( f(x)=0.8^{2.2(x-3)}-1.8 \). 
+      Vertical compression by a factor of 0.4.  
+      Horizontal compression by a factor of \( 1/2.2 = 5/11 \).  
+      Horizontal translation 3 units to the right.  
+      Vertical translation 1.8 units downward.</p >
+
+      <p><strong>Domain and Range Paragraph:</strong>  
+      The exponential function in this picture is 
+      \( f(x)=0.8^{2.2(x-3)}-1.8 \).  
+      The domain is \( \{1.038967 \le x \le 4.5\} \).  
+      The range is \( \{-1.32115 \le y \le 0.81876\} \).</p >
+
+      <p><strong>Additional Explanation:</strong><br>
+      The reason why I chose the exponential function for this graph is that the roller coaster is close to the shape of the exponential function.<br><br>
+
+      <strong>Challenge:</strong><br>
+      When I do this, the most challenging part is the connections between several different functions. 
+      So I don't set the domain of each function at the first stage, so as to find the connection points between each function.
+      </p >
+
+    </div>
+
+    <!-- Desmos Graph -->
+    <iframe src="https://www.desmos.com/calculator/z8dec5ifxx" allowfullscreen></iframe>
+
+  </div>
+
+</body>
+</html>
