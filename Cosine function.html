@@ -1,0 +1,69 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>An Cosine Function</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+    }
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    iframe {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    .text {
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>An Cosine Function</h1>
+
+  <div class="content">
+    <!-- Desmos graph -->
+    <iframe src="https://www.desmos.com/calculator/kgticovnh0?lang=zh-CN" width="600" height="400"></iframe>
+
+    <!-- MathJax and paragraphs -->
+    <div class="text">
+      <p>
+        The function in this picture is:
+        \[
+        y = 0.7\cos(2.243x) - 0.7 \quad \{-1.73 \le x \le 2.6\}
+        \]
+      </p >
+
+      <p><strong>1. Transformations Paragraph:</strong><br>
+        In this picture, the function I have chosen is a cosine function.  
+        The parent function is \(y = \cos x\).  
+        The transformed function is \(y = 0.7\cos(2.243x) - 0.7\).  
+        A vertical shrink by a factor of 0.7 (decreasing the amplitude from 1 to 0.7).  
+        A horizontal shrink by a factor of \(\frac{1}{2.243}\) (decreasing the period).
+      </p >
+
+      <p><strong>2. Domain and Range Paragraph:</strong><br>
+        The cosine function in this picture is 
+        \(y = 0.7\cos(2.243x) - 0.7, \{-1.73 \le x \le 2.6\}\).  
+        The domain is \(\{-1.73 \le x \le 2.6\}\).  
+        The range is \(\{-1.23184 \le y \le -0.07011\}\).
+      </p >
+      <p><strong>Challenge:</strong><br>
+        I found it difficult to calculate the functional equation after finding the point, as the numbers often required precision up to three decimal places, so I borrowed an AI tool to assist with the precise calculations.
+      </p >
+    </div>
+  </div>
+</body>
+</html>
